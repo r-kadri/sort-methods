@@ -13,6 +13,7 @@ public class AskNumbers {
         }
 
         System.out.println("----------------------------");
+        scanner.close();
 
         return mix;
     }
