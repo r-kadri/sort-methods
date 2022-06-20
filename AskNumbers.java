@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class AskNumbers {
@@ -16,6 +17,24 @@ public class AskNumbers {
         scanner.close();
 
         return mix;
+    }
+
+    public static int[] get() {
+        Random rdm = new Random();
+        int[] list = new int[10];
+        for (int i = 0; i < list.length; i++) {
+            list[i] = rdm.nextInt(11);
+        }
+        return list;
+    }
+
+    public static int[] get(int max) {
+        Random rdm = new Random();
+        int[] list = new int[max];
+        for (int i = 0; i < list.length; i++) {
+            list[i] = rdm.nextInt(11);
+        }
+        return list;
     }
 
 }
